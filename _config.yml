@@ -1,0 +1,7 @@
+title: Simba World
+description: Shubham Gupta — open-source contributor focused on the web platform and browser engines.
+url: "https://simbaworld.org"
+baseurl: ""
+markdown: kramdown
+exclude:
+  - Shubham_Gupta*.pdf

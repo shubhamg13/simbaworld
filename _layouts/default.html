@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="theme-color" content="#0b0f14">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="{{ site.baseurl }}/">Simba<span>World</span></a>
+      <nav class="nav-links">
+        <a href="{{ site.baseurl }}/#about">About</a>
+        <a href="{{ site.baseurl }}/#experience">Experience</a>
+        <a href="{{ site.baseurl }}/#talks">Talks</a>
+        <a href="{{ site.baseurl }}/#contributions">Open Source</a>
+        <a href="{{ site.baseurl }}/#projects">Projects</a>
+        <a href="{{ site.baseurl }}/#apps">Apps</a>
+        <a href="{{ site.baseurl }}/#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <p>&copy; {{ site.time | date: '%Y' }} Shubham Gupta · Simba World</p>
+      <p class="muted">Built with Jekyll · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+</body>
+</html>
